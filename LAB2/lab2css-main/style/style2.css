@@ -2,6 +2,7 @@ body{
   display:flex;
   align-items:center;
   background-color:white;
+  
 }
 .grid{
   display:grid;
@@ -9,16 +10,15 @@ body{
   border:1px solid black;
   padding:5px;
 }
-.row{
+.row {
   display: flex;
   gap: 5px;
 }
-.box{
+.box {
   align-items:center;
   border: 1px solid black;
 }
 .box-a,.box-b {
-  background-color: cyan;
   font-size:24px;
 }
 .box-c{
@@ -26,8 +26,10 @@ body{
   font-size:24px;
 }
 .row:hover .box {
-  color: red;
+  background-color: rgb(0, 140, 255);
+  color: white;
 }
 .row2:hover .box {
-  color: red;
+  background-color: rgb(0, 140, 255);
+  color: white;
 }

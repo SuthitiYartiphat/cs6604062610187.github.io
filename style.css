@@ -1,9 +1,5 @@
 html{
-     background-color: rgb(4, 190, 247);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 700px;
-    background-position: center;
+     background-color: rgb(105, 150, 163);
 }
 body{
     font-size: 22px;
@@ -27,19 +23,18 @@ nav ul li{
 nav a{
     display: block;
     padding: 0 15px;
-    color: #fff;
+    color: #0099ff;
     line-height: 60px;
     font-size: 20px;
     text-decoration: none;
 }
-/* Hide Dropdown by Default*/
 nav ul ul {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 50px;
 }
 nav a:hover{
-    background-color: #ffffff;
+    background-color: #0099ff;
     color: #000000;
 }
 nav ul li:hover > ul {
@@ -50,14 +45,9 @@ nav ul ul li{
     float: none;
     display: list-item;
     position: relative;
-
 }
 nav ul ul ul li {
     position: relative;
     top: -60px;
     left: 170px;
-}
-li > a::after { content: ' +';}
-li > a:only-child::after {
-    content: '';
 }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    fieldset {
+      width: 240px;
+      border: 1px solid black;
+      padding: 5px;
+    }
+    .label-box {
+      display: inline-block;
+      border: 1px solid black;
+      padding: 2px 4px;
+      margin-bottom: 5px;
+      
+    }
+  </style>
+</head>
+<body>
+<h1>เข้าสู่ระบบ</h1>
+<form action="Logout.html">
+    <fieldset>
+        <div>
+            <label class="label-box" for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div>
+            <label class="label-box" for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <fieldset>
+            <label>กรุณาพิมพ์ตามตัวเลขที่ปรากฏ:</label><br>
+            <span>1559</span><br>
+            <input type="text" name="captcha">
+        </fieldset>
+    </fieldset><br>
+    <input type="image" src="login.png" alt="login" width="50" height="50">
+</form>
+</body>
+</html>

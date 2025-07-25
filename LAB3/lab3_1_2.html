@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+	  input:invalid {
+	    border: red solid 4px;
+	  }
+	  input,
+	  input:valid {
+	    color:green;
+	  }
+	</style>
+</head>
+<body>
+  <h3>1.รหัสผ่านต้องมีตัวพิมพ์ใหญ่ ตัวพิมพ์เล็ก และตัวเลข อย่างน้อย 1 ตัว และมีความยาวอย่างน้อย 5 ตัว</h3>
+	<input 
+    type="password"
+    name="password"
+    placeholder="รหัสผ่าน 5 ตัวขึ้นไป"
+    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{5,}$"
+  >
+  <h3>2.บ้านเลขที่(เช่น235/4หรือ69)</h3>
+  <input
+    type="text" 
+    name="address" 
+    placeholder="บ้านเลขที่ เช่น 235/4 หรือ 69"
+    pattern="^\d+(/\d+)?$"
+  >
+  <h3>3.รหัสสินค้า(3ตัวอักษรใหญ่ตามด้วยตัวเลข2ตัว)</h3>
+  <input 
+    type="text" 
+    name="product-code" 
+    placeholder="เช่น AAA89"
+    pattern="^[A-Z]{3}\d{2}$"
+  >
+  <h3>ชื่อ-นามสกุล (เฉพาะภาษาไทยเท่านั้น)</h3>
+  <input 
+    type="text" 
+    name="fullname" 
+    placeholder="ชื่อ-นามสกุล"
+    pattern="^[ก-๙\s]+"
+  >
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>6C Event Handling Skeleton</title>
+  </head>
+  <body>
+    <form name="myForm">
+
+      <input type="radio" name="r" value="r1" id="rCars" /><label for="rCars">Cars</label>
+      <input type="radio" name="r" value="r2" id="rDays" /><label for="rDays">Days</label>
+      <input type="radio" name="r" value="r3" id="rJobs" /><label for="rJobs">Jobs</label>
+      <hr />
+      <select size="1" name="combo1" style="width: 150px">
+        <option value="">choose radio</option>
+      </select>
+    </form>
+    <script>
+      "use strict";
+      const cars = ["Audi","BMW","Benz","Toyota"];
+      const days = ["Monday","Tuesday","Wednesday","Thursday","Friday"];
+      const jobs = ["engineer","teacher","salesman"];
+      const combo = document.forms["myForm"].combo1;
+      document.getElementById("rCars").addEventListener("click", () => fillCombo(cars));
+      document.getElementById("rDays").addEventListener("click", () => fillCombo(days));
+      document.getElementById("rJobs").addEventListener("click", () => fillCombo(jobs));
+      function fillCombo(items) {
+        combo.innerHTML = "";
+        items.forEach(item => {
+          const opt = document.createElement("option");
+          opt.value = item;
+          opt.textContent = item;
+          combo.appendChild(opt);
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function () {
+        let select = document.getElementById("selectNumbera");
+        let options = ["1", "2", "3", "4", "5"];
+        select.innerHTML = "";
+        for (let i = 0; i < options.length; i++) {
+          let opt = options[i];
+          select.innerHTML +=
+            '<option value="' + opt + '">' + opt + "</option>";
+        }
+
+        var myArray = ["1", "2", "3", "4", "5"];
+        let dropdown = document.getElementById("selectNumberb");
+        for (let i = 0; i < myArray.length; ++i) {
+          dropdown.innerHTML +=
+            '<option value="' + myArray[i] + '">' + myArray[i] + "</option>";
+        }
+      };
+
+    </script>
+  </head>
+  <body>
+    <form id="myFormA">
+      <select id="selectNumbera" >
+        <option>Choose a number</option>
+      </select>
+    </form>
+    <br />
+    <form id="myFormB">
+      <select id="selectNumberb">
+        <option>Choose a number</option>
+      </select>
+    </form>
+  </body>
+</html>
